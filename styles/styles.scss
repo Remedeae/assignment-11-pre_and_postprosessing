@@ -1,0 +1,33 @@
+@use 'variables';
+body {
+    font-family: $main-font;
+    font-size: $font-size_s;
+    font-weight: $font-bold;
+    color: $color-dark;
+}
+p {
+    color: $color-medium;
+    font-weight: $font-normal;
+}
+h1 {
+    font-size: $font-size_xl;
+}
+h2 {
+    font-size: $font-size_l;
+}
+h3, h6 {
+    font-size: $font-size_m;
+}
+h4, a {
+    font-size: $font-size_s;
+}
+h5 {
+    font-size: $font-size_xs;
+}
+h6 {
+    color: $accent-color;
+}
+@import 'index';
+@import 'project-details';
+@import 'contact';
+
