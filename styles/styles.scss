@@ -1,9 +1,12 @@
-@use 'variables';
+@import 'variables';
 body {
     font-family: $main-font;
     font-size: $font-size_s;
     font-weight: $font-bold;
     color: $color-dark;
+    max-width: 100vw;
+    width: 100%;
+    padding: 61px 0 47px 126px;
 }
 p {
     color: $color-medium;
@@ -24,10 +27,11 @@ h4, a {
 h5 {
     font-size: $font-size_xs;
 }
-h6 {
-    color: $accent-color;
+h6, a:visited {
+    color: $color-accent;
 }
+
+@import 'header+footer';
 @import 'index';
 @import 'project-details';
 @import 'contact';
-

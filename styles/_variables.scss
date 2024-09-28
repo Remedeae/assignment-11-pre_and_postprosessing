@@ -6,7 +6,12 @@ $font-size_s: 18px;
 $font-size_m: 22px;
 $font-size_l: 28px;
 $font-size_xl: 40px;
-$dark-color: #111111;
-$middle-color: #979797;
-$light-color: #D8D8D8;
-$accent-color: #4A4FF2;
+$color-dark: #111111;
+$color-medium: #979797;
+$color-light: #D8D8D8;
+$color-accent: #4A4FF2;
+
+%body-width {
+    max-width: 1100px;
+    width: 100%;
+}

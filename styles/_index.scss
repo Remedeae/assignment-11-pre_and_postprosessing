@@ -1,0 +1,93 @@
+.intro {
+    display: grid;
+    grid-template: 28px 32px 134px 2px 32px 23px / 635px 190px 207px;
+    padding: 96px 0 91px 0;
+}
+h6 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+h1 {
+    grid-area: 3 / 1 / 7 / 2;
+    line-height: 60px;
+}
+.grey-line {
+    grid-area: 4 / 3 / 5 / 4;
+    background-color: $color-light;
+    width: 30px;
+}
+.intro > p {
+    grid-area: 5 / 3 / 6 /4;
+}
+span {
+    color: $color-accent;
+}
+
+.main-collage {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    @extend %body-width;
+    height: 1960px;
+}
+.main-collage > img {
+    padding: 0 10px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    @extend %body-width;
+    min-height: 106px;
+    padding: 91px 0 101px 0;
+}
+h2 {
+    max-width: 635px;
+    width: 100%;
+    min-height: 106px;
+    line-height: 38px;
+}
+.service-list > ul {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-around;
+    max-width: 349px;
+    width: 100%;
+    min-height: 89px;
+    font-size: $font-size_s;
+    font-weight: $font-normal;
+    color: $color-medium;
+}
+
+.awards{
+    border-style: solid none;
+    border-color: $color-light;
+    border-radius: 2px;
+    @extend %body-width;
+
+    &__card {
+        padding-top: 48px;
+        @extend %body-width;
+        min-height: 303px;
+    
+        &_price {
+            display: flex;
+            justify-content: end;
+            @extend %body-width;
+            min-height: 189px;
+        }
+        h3 {
+            justify-self: start;
+        }
+
+        &_price > div {
+            display: flex;
+            flex-direction: column;
+            width: 190px;
+        }
+    }
+    &__card:first-child {
+        border-style: none none solid none;
+        border-color: $color-light;
+        border-radius: 2px;
+    }
+}
