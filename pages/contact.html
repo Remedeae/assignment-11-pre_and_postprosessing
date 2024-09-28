@@ -4,57 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <img src="images/Logo.svg" alt="Logo Genesis">
+        <img class="logo" src="../images/Logo.svg" alt="Logo Genesis">
         <ul>
             <li>
-                <a href="pages/project-details.html">Projects</a>
+                <a href="../pages/project-details.html">Projects</a>
             </li>
             <li>
-                <a href="pages/contact.html">Contact</a>
+                <a href="../pages/contact.html">Contact</a>
             </li>
         </ul>
     </header>
-    <section>
-        <div>
+    <section class="info-contact">
+        <div class="info-contact__text">
             <h1>Full set of great
                 features to make your
                 product fresh</h1>
             <p>Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</p>
         </div>
         <form action="">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-            <label for="message">Message</label>
-            <input type="text" id="message">
-            <button>Submit</button>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email" required >
+            <input type="text" name="message" id="message" placeholder="Message">
+            <button type="submit">Submit</button>
         </form>
     </section>
-    <img src="../images/contact_map.png" alt="Map">
+    <img class="map" src="../images/contact_map.png" alt="Map">
     <footer>
-        <img src="images/Logo.svg" alt="Logo Genesis">
+        <img class="logo" src="../images/Logo.svg" alt="Logo Genesis">
         <div>
             <ul>
                 <li>
-                    <a href="pages/project-details.html">Projects</a>
+                    <a href="../pages/project-details.html">Projects</a>
                 </li>
                 <li>
-                    <a href="pages/contact.html">Contact</a>
+                    <a href="../pages/contact.html">Contact</a>
                 </li>
             </ul>
             <div class="social-media">
                 <a href="#">
-                    <img src="images/dribbble-logo.png" alt="Dribble">
+                    <img src="../images/dribbble-logo.png" alt="Dribble">
                 </a>
                 <a href="#">
-                    <img src="images/instagram.png" alt="Instagran">
+                    <img src="../images/instagram.png" alt="Instagran">
                 </a>
                 <a href="#">
-                    <img src="images/twitter-logo-silhouette.png" alt="Twitter">
+                    <img src="../images/twitter-logo-silhouette.png" alt="Twitter">
                 </a>
             </div>
         </div>

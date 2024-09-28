@@ -1,0 +1,52 @@
+.info-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 0 120px 0;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 445px;
+        width: 100%;
+        min-height: 252px;
+
+        & > h1 {
+            line-height: 55px;
+        }
+        & > p {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    max-width: 475px;
+    width: 100%;
+    min-height: 291px;
+    padding-top: 21px;
+}
+input {
+    max-width: 475px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 16px;
+    border-style: none none solid none ;
+    border-color: $color-light;
+}
+button {
+    width: 125px;
+    height: 50px;
+    color: white;
+    background-color: $color-accent;
+    border: none;
+}
+
+.map {
+    padding-bottom: 110px;
+}

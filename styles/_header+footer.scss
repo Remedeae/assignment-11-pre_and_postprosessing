@@ -6,6 +6,9 @@ header, footer {
     @extend %body-width;
     min-height: 23px;
 }
+footer {
+    padding-bottom: 47px;
+}
 .logo {
     width: 90px;
     height: 19px;

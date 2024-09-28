@@ -1,16 +1,22 @@
+@import 'reset';
 @import 'variables';
 body {
+    display: flex;
+    flex-direction: column;
     font-family: $main-font;
     font-size: $font-size_s;
     font-weight: $font-bold;
     color: $color-dark;
-    max-width: 100vw;
-    width: 100%;
-    padding: 61px 0 47px 126px;
+    width: 95vw;
+    padding: 61px 125px 47px 126px;
+}
+body > * {
+    @extend %body-width;
 }
 p {
     color: $color-medium;
     font-weight: $font-normal;
+    line-height: 26px;
 }
 h1 {
     font-size: $font-size_xl;
@@ -23,6 +29,7 @@ h3, h6 {
 }
 h4, a {
     font-size: $font-size_s;
+    color: $color-dark;
 }
 h5 {
     font-size: $font-size_xs;
@@ -30,7 +37,9 @@ h5 {
 h6, a:visited {
     color: $color-accent;
 }
-
+a:hover {
+    color: $color-medium;
+}
 @import 'header+footer';
 @import 'index';
 @import 'project-details';
